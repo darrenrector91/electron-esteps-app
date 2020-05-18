@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Steps</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row titleWrapper">
+        <h1>E-Steps Calculator</h1>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <label for="current-esteps">Current E-Steps</label>
+        </div>
+        <div class="col-6">
+          <input type="text" class="current-steps" id="current-esteps-input" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <label for="measured-amount">Measured Amount</label>
+        </div>
+        <div class="col-6">
+          <input
+            type="text"
+            class="measured-amount"
+            id="measured-amount-input"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <label for="actual-amount">Actual Amount</label>
+        </div>
+        <div class="col-6">
+          <input type="text" class="actual-amount" id="actual-amount-input" />
+        </div>
+      </div>
+      <div class="row" style="text-align: right; margin: 20px 0;">
+        <div class="col-8">
+          <button
+            class="btn btn-info"
+            id="calculateBtn"
+            onclick="calculateEsteps()"
+          >
+            Calculate
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6" id="results">
+          <label for="new-esteps-amount">New E-Steps Amount</label>
+        </div>
+        <div class="col-6" id="results">
+          <input
+            type="text"
+            class="new-esteps-amount"
+            id="new-esteps-amount-input"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
